@@ -1,5 +1,5 @@
 const express = require('express');
-const APP_PORT = process.env.PORT || 5500;
+const APP_PORT = process.env.PORT || 5555;
 const path = require('path');
 const hbs = require('hbs');
 const geocode = require('./utils/geocode');
