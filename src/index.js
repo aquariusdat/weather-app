@@ -1,6 +1,6 @@
 const express = require('express');
 require('dotenv').config();
-const APP_PORT = process.env.PORT || 5555;
+const APP_PORT = process.env.PORT || 5500;
 const path = require('path');
 const hbs = require('hbs');
 const geocode = require('./utils/geocode');
