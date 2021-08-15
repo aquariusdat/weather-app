@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="scss/weather.css">
+</head>
+
+<body>
+    <div class="about__wrapper">
+
+        {{>header}}
+
+        <div class="about__content">
+            <div class="container">
+                <div class="title">
+                    <h1>About me</h1>
+                    <div class="line__wrapper">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="img" data-tilt>
+                        <img src="img/avatar.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div>
+                            <span>Hello, my full name is Hua Ton Dat.</span>
+                        </div>
+                        <div>
+                            <span>I'm a Web Developer. Currently, I'm working for S&S
+                                Consulting and Auditing company. </span>
+                        </div>
+                        <div>
+                            <span>This page just only my exercise when i studying NodeJS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{>footer}}
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script>
+        $('.content .img').tilt({
+            maxTilt: 20,
+            perspective: 1200,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+            scale: 1,
+            speed: 1500,
+            transition: true,
+            reset: true,
+        })
+    </script>
+</body>
+
+</html>

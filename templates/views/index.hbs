@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="scss/weather.css">
+</head>
+
+<body>
+    <div class="weather__wrapper">
+        {{>header}}
+
+        <div class="weather__content">
+            <div class="container">
+                <div class="title">
+                    <h1>Weather App</h1>
+                    <div class="line__wrapper">
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="search-form__wrapper">
+                    <form id="search-form">
+                        <input type="text" id="address" name="address" placeholder="Please enter one location name...">
+                        <button type="submit" id="search">Search</button>
+                    </form>
+                </div>
+
+                <div class="forecast">
+                    <div class="error">
+                        <p id="error-msg">
+
+                        </p>
+                    </div>
+                    <div class="temp">
+                        <img id="temp-img" src="" alt="">
+                        <p id="temp-msg">
+
+                        </p>
+                    </div>
+                    <div class="location">
+                        <img id="location-img" src="" alt="">
+                        <p id="location-msg">
+
+                        </p>
+                    </div>
+                    <div class="desc">
+                        <img id="desc-img" src="" alt="">
+                        <p id="desc-msg">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{>footer}}
+    </div>
+</body>
+<script src="js/app.js"></script>
+
+</html>
