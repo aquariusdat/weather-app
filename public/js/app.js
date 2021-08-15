@@ -12,7 +12,7 @@ searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = addressInput.value;
 
-    fetch('http://localhost:5555/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data?.error) {
                 errorMessage.textContent = error;
